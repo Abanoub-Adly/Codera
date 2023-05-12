@@ -59,6 +59,12 @@ a{
 ::-webkit-scrollbar-thumb{
     background-color: var(--primary-color);
 }
+.scroller{
+    position: fixed;
+    background-color: rgb(81 101 253);
+    height: 4px;
+    border-radius: 6px;
+}
 .header{
     padding-top: 20px;
     height: 100vh;
@@ -530,13 +536,15 @@ a{
     .my-price .container ul li::before{
         position: absolute;
         content:"*";
+        font-size: 12px;
+        padding: 0 5px;
         right: -5%;
         padding-left: 10%;
         color: var(--bs-yellow);
     }
 @media(max-width:767px){
     .my-price .container ul li{
-        font-size: 14px;
+        font-size: 12px;
         padding:16px 20px;
     }
     .my-price .container ul{
@@ -694,11 +702,11 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 }
 .sale .container .box-container .box{
-    width: 180px;
-    height: 180px;
+    width: 100px;
+    height: 150px;
     text-align: center;
     font-size: 30px;
     color: #fcfcfc;
@@ -708,7 +716,7 @@ a{
 }
 .sale .container .box-container .box span{
     display: block;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 900;
     color: #5caa94;
     margin-top: 10px;
@@ -716,7 +724,7 @@ a{
 }
 @media(max-width:767px){
     .sale .container .box-container{
-        gap: 5;
+        gap: 10px;
     }
     .sale .container .box-container .box {
         width: 80px;
